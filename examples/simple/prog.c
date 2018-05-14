@@ -19,25 +19,25 @@ void print_real(real arg)
   real assembled = realFields_to_real(fields);
 
   print_realValue(arg);
-	print_realBytes(arg);
-	print_realFields(fields);
+  print_realBytes(arg);
+  print_realFields(fields);
   print_realValue(assembled);
 }
 
 int main()
 {
-	real my_key;
+  real my_key;
 
-	while(true)
-	{
-		scanf("%Lf", &my_key.value);
-		print_real(my_key);
-		printf("\n");
-		if(my_key.value == 0)
-		{
-			break;
-		}
-	}
+  while(true)
+  {
+    scanf("%Lf", &my_key.value);
+    print_real(my_key);
+    printf("\n");
+    if(my_key.value == 0)
+    {
+      break;
+    }
+  }
 
-	return 0;
+  return 0;
 }

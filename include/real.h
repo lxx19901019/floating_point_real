@@ -24,9 +24,9 @@
 #if defined(EXTENDED_PRECISION_COMPUTING)
   typedef long double fpUnit;
 #elif defined(DOUBLE_PRECISION_COMPUTING)
-	typedef double fpUnit;
+  typedef double fpUnit;
 #elif defined(SINGLE_PRECISION_COMPUTING)
-	typedef float fpUnit;
+  typedef float fpUnit;
 #else
   #error "Declare your real type precision according to IEEE 754 standard";
 #endif
@@ -42,8 +42,8 @@ extern const bool MANTISSA_FIRST_DIGIT_EXPLICITE;
 
 // Size of long double type depends on declared real type precision
 typedef union {
-	fpUnit value;
-	byte bytes[sizeof(fpUnit)];
+  fpUnit value;
+  byte bytes[sizeof(fpUnit)];
 } real;
 
 // Floating point number has form: sign mantissa * 2^exponent
@@ -51,9 +51,9 @@ typedef union {
 // exponent - unbiased exponent
 // sign - 0 means '+', 1 means '-'
 typedef struct {
-	uint64_t mantissa;
-	int16_t exponent;
-	byte sign;
+  uint64_t mantissa;
+  int16_t exponent;
+  byte sign;
 } realFields;
 
 realFields real_to_realFields(real arg);

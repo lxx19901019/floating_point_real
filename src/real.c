@@ -42,11 +42,11 @@ uint64_t get_mantissa(real arg);
 
 realFields real_to_realFields(real arg)
 {
-	realFields result;
-	result.sign = get_sign(arg);
-	result.exponent = get_exponent(arg);
-	result.mantissa = get_mantissa(arg);
-	return result;
+  realFields result;
+  result.sign = get_sign(arg);
+  result.exponent = get_exponent(arg);
+  result.mantissa = get_mantissa(arg);
+  return result;
 }
 
 real realFields_to_real(realFields arg)
@@ -63,7 +63,7 @@ real realFields_to_real(realFields arg)
 
 void print_realFields(realFields arg)
 {
-	char sign = arg.sign==0 ? '+' : '-';
+  char sign = arg.sign==0 ? '+' : '-';
   fpUnit norm_mantissa = normalize_mantissa(arg.mantissa);
   printf("real fields: %c %Lf * 2^(%d)\n", sign, (long double)norm_mantissa, arg.exponent);
 }
