@@ -1,12 +1,12 @@
 ## floating_point_real
 
 ### About
-Simple library providing the flexible real type in accordance with IEEE 754 standard
+Simple library providing the flexible real type in accordance with IEEE 754 standard.
 
 It supports:
-- single precision number (32 bits)
-- double precision number (64 bits)
-- extended precision number (80 bits)
+- single precision number (32 bits),
+- double precision number (64 bits),
+- extended precision number (80 bits).
 
 Choose proper variable in include/real.h
 
@@ -19,13 +19,13 @@ Library provide:
 - reading/writing byte by byte,
 - printing real and realFields types.
 
-### Run exapmle
+### Run example
 > cd examples/simple
 make run
 
 Type a number like '15.65' and survey the individual fields:
 
->./prog.elf
+> ./prog.elf
 15.65
 real value: 15.650000
 real bytes: 00 00 00 00 00 40 | 40 02 fa 66 66 66 66 66 66 66
