@@ -25,12 +25,12 @@ make run
 
 Type a number like '15.65' and survey the individual fields:
 
-> ./prog.elf
-15.65
-real value: 15.650000
-real bytes: 00 00 00 00 00 40 | 40 02 fa 66 66 66 66 66 66 66
-real fields: + 1.956250 * 2^(3)
-real value: 15.650000
+> ./prog.elf  
+15.65  
+real value: 15.650000  
+real bytes: 00 00 00 00 00 40 | 40 02 fa 66 66 66 66 66 66 66  
+real fields: + 1.956250 * 2^(3)  
+real value: 15.650000  
 
 To stop type 0.0
 
